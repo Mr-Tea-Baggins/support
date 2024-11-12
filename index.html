@@ -48,26 +48,45 @@
             background-color: #34495e;
         }
         .content {
+            position: relative;
             max-width: 1200px;
             margin: 30px auto;
             padding: 20px;
+            background-image: url('images/business-background.jpg'); /* Add your business image here */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            border-radius: 10px;
+            overflow: hidden;
+            filter: blur(10px); /* Adds blur to the background */
+        }
+        .content .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay */
         }
         .business-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 30px;
+            position: relative;
+            z-index: 1;
         }
         .business-box {
             background-color: #ffffff;
             border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            padding: 20px 15px;
+            padding: 15px;
             text-decoration: none;
             color: #333;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border: 2px solid #ececec;
             background-color: #ffffff;
+            height: 250px; /* Adjust box height */
         }
         .business-box:hover {
             transform: translateY(-5px);
@@ -75,11 +94,10 @@
             border-color: #3498db;
         }
         .business-box img {
-            width: 100%;
-            max-width: 80px;
-            height: auto;
+            width: 120px;
+            height: 120px;
             margin-bottom: 15px;
-            border-radius: 10px;
+            border-radius: 15px; /* Rounded rectangular icons */
             object-fit: cover;
         }
         .business-box h2 {
@@ -124,6 +142,7 @@
 </header>
 
 <div class="content">
+    <div class="overlay"></div> <!-- Overlay for the blur effect -->
     <div class="business-grid">
         <!-- Solar Installation -->
         <a href="solar.html" class="business-box">
