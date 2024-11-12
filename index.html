@@ -60,10 +60,10 @@
             right: 0;
             bottom: 0;
             background-image: url('images/main_back.jpeg');
-            background-size: cover;
+            background-size: contain; /* Prevent stretching */
             background-position: center;
             background-attachment: fixed;
-            filter: blur(4px);
+            filter: brightness(0.75); /* Fade the background by 25% */
             z-index: -1;
         }
         .content-overlay {
@@ -82,7 +82,7 @@
             z-index: 1;
         }
         .business-box {
-            background-color: #ffffff;
+            background-color: #f4f4f4; /* Light grey */
             border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
@@ -105,7 +105,7 @@
             margin-bottom: 15px;
         }
         .business-box h2 {
-            font-size: 1.2em;
+            font-size: 1.3em;
             margin: 10px 0;
             color: #34495e;
             font-weight: 600;
