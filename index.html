@@ -3,61 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Directory - Local Businesses</title>
+    <title>Local Business Directory</title>
     <style>
-        /* Basic styling for layout */
+        /* General styling for layout */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-        }
-        header, .content, footer {
-            width: 100%;
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
+            background-color: #f7f8fc;
         }
         header {
-            background-color: #2d6187;
-            color: #fff;
+            background-color: #35495e;
+            color: #ffffff;
             text-align: center;
             padding: 40px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        h1 {
+        header h1 {
             font-size: 2.5em;
             margin: 0;
+            letter-spacing: 1px;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #cbd4e1;
         }
         .content {
-            background-color: #fff;
+            max-width: 1200px;
+            margin: 20px auto;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px 0;
         }
-        .business-boxes {
+        .business-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 20px;
-            text-align: center;
         }
         .business-box {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
             padding: 20px;
-            background-color: #e3f2fd;
-            border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
             text-decoration: none;
             color: #333;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .business-box:hover {
-            transform: scale(1.05);
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .business-box img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+            border-radius: 50%;
+        }
+        .business-box h2 {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #35495e;
+        }
+        .business-box p {
+            color: #6b7b8c;
+            font-size: 0.9em;
+            margin-top: 5px;
         }
         footer {
+            background-color: #35495e;
+            color: #ffffff;
             text-align: center;
             padding: 20px 0;
-            background-color: #2d6187;
-            color: #fff;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -65,32 +82,49 @@
 
 <header>
     <h1>Local Business Directory</h1>
-    <p>Find the best local businesses for your needs</p>
+    <p>Your guide to trusted local businesses</p>
 </header>
 
 <div class="content">
-    <div class="business-boxes">
+    <div class="business-grid">
+        <!-- Solar Company -->
         <a href="solar.html" class="business-box">
-            <h2>Solar Installation Company</h2>
+            <img src="https://via.placeholder.com/60" alt="Solar Icon">
+            <h2>Solar Installation</h2>
             <p>Bright Solar Solutions</p>
         </a>
+
+        <!-- Chimney Sweep -->
         <a href="chimney.html" class="business-box">
+            <img src="https://via.placeholder.com/60" alt="Chimney Sweep Icon">
             <h2>Chimney Sweep</h2>
             <p>Clean Sweep Services</p>
         </a>
+
+        <!-- Computer Support -->
         <a href="computer.html" class="business-box">
+            <img src="https://via.placeholder.com/60" alt="Computer Support Icon">
             <h2>Computer Support</h2>
             <p>PC Help & Solutions</p>
         </a>
+
+        <!-- Cleaning Services -->
         <a href="cleaning.html" class="business-box">
+            <img src="https://via.placeholder.com/60" alt="Cleaning Icon">
             <h2>Cleaning Services</h2>
             <p>Spotless Home Care</p>
         </a>
+
+        <!-- Wine Selling -->
         <a href="wine.html" class="business-box">
+            <img src="https://via.placeholder.com/60" alt="Wine Seller Icon">
             <h2>Wine Seller</h2>
             <p>Fine Vintages</p>
         </a>
+
+        <!-- Insulation Services -->
         <a href="insulation.html" class="business-box">
+            <img src="https://via.placeholder.com/60" alt="Insulation Icon">
             <h2>Insulation Services</h2>
             <p>Eco Insulation</p>
         </a>
@@ -98,7 +132,7 @@
 </div>
 
 <footer>
-    <p>&copy; 2024 Local Business Directory | Connecting You to Quality Services</p>
+    <p>&copy; 2024 Local Business Directory | Connecting You with Quality Services</p>
 </footer>
 
 </body>
