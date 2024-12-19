@@ -35,22 +35,36 @@
             display: block;
         }
 
+        .logo {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px; /* Adds space between the logo and title */
+        }
+
         .logo img {
-            max-width: 150px; /* Adjust to fit your modernized logo */
+            max-width: 100px; /* Slightly smaller logo */
             height: auto;
+        }
+
+        header h1 {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 24px; /* Adjust as needed */
+            margin: 0; /* Removes extra space */
+        }
+
+        header nav {
+            margin-top: 10px; /* Adjusts alignment for navigation */
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>
-                <div class="logo">
-                    <!-- Replace 'logo.webp' with a modernized logo -->
-                    <img src="images/logo.webp" alt="TechSphere IT Solutions Logo">
-                </div>
-                TECHSPHERE IT SOLUTIONS
-            </h1>
+            <div class="logo">
+                <img src="images/logo.webp" alt="TechSphere IT Solutions Logo">
+            </div>
+            <h1>TECHSPHERE IT SOLUTIONS</h1>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -60,6 +74,7 @@
             </nav>
         </div>
     </header>
+    
 
     <section class="hero">
         <div class="container">
