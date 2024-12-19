@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="css/custom.css">
         <!-- Add Font Awesome CDN for social media icons -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-        <script src="https://www.youtube.com/iframe_api"></script> <!-- YouTube Iframe API -->
     </head>
 <body>
     <header>
@@ -67,9 +66,14 @@
 
     <section id="extras" class="extras">
         <div class="container">
-            <h2>Learn How to Build a PC</h2>
+            <h2>Ultimate PC Build guide</h2>
             <div class="youtube-video">
-                <div id="player"></div> <!-- YouTube video player container -->
+                <iframe width="448" height="252" 
+                src="https://www.youtube-nocookie.com/embed/DC-Xn2C_L1U?si=z1sQbMCIbvBTjG5B&autoplay=0&controls=0" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
             </div>
         </div>
     </section>
@@ -100,31 +104,5 @@
             <p>&copy; 2024 TechSphere IT Solutions. All rights reserved.</p>
         </div>
     </footer>
-
-    <script>
-        // YouTube API function to create the player
-        var player;
-
-        // This function gets called when the YouTube API is ready
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player('player', {
-                videoId: 'DC-Xn2C_L1U', // Replace with your YouTube video ID
-                events: {
-                    'onReady': onPlayerReady,
-                    'onStateChange': onPlayerStateChange
-                }
-            });
-        }
-
-        // This function is called when the player is ready
-        function onPlayerReady(event) {
-            event.target.setVolume(50); // Set volume to 50% (half)
-        }
-
-        // This function is called when the player's state changes
-        function onPlayerStateChange(event) {
-            // Example: Add any actions when the player state changes if needed
-        }
-    </script>
 </body>
 </html>
