@@ -27,9 +27,26 @@
             font-size: 2.5em;
             margin: 0;
         }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            letter-spacing: 2px;
+            font-weight: 600;
+            display: flex;
+            align-items: center; /* Align logo and text vertically */
+            justify-content: center; /* Center-align the whole h1 block */
+            gap: 15px; /* Space between logo and text */
+        }
+
+        header .logo img {
+            width: 130px; /* Smaller logo size */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 10px; /* Add spacing between logo and text */
+        }
+
         .content {
             background-color: #fff;
-            padding: 20px;
+            padding: 10px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin: 20px auto; /* Center content */
@@ -83,7 +100,11 @@
 <body>
 
 <header>
-    <h1>Contact Us</h1>
+    <h1>
+        <div class="logo">
+            <img src="images/abd.webp" alt="Aisne Business Directory">
+        </div>
+        Contact Us</h1>
     <p>We'd love to hear from you!</p>
 </header>
 
@@ -121,7 +142,7 @@
 </div>
 
 <footer>
-    <p>&copy; 2024 rgy</p>
+    <p>&copy; 2024</p>
 </footer>
 <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
