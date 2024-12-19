@@ -5,13 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechSphere IT Solutions</title>
     <link rel="stylesheet" href="css/custom.css">
+    <style>
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .social-media a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #555;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-media a:hover {
+            background-color: #0073e6;
+        }
+
+        .youtube-video iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .logo img {
+            max-width: 150px; /* Adjust to fit your modernized logo */
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <img src="images/logo.webp" alt="TechSphere IT Solutions Logo">
-            </div>
+            <h1>
+                <div class="logo">
+                    <!-- Replace 'logo.webp' with a modernized logo -->
+                    <img src="images/logo.webp" alt="TechSphere IT Solutions Logo">
+                </div>
+                TECHSPHERE IT SOLUTIONS
+            </h1>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -24,7 +63,7 @@
 
     <section class="hero">
         <div class="container">
-            <h1>Your Local Technology Partner</h1>
+            <h2>Your Local Technology Partner</h2>
             <p>Empowering Personal and Business Success</p>
             <a href="#contact" class="cta-button">Get Started</a>
         </div>
@@ -61,6 +100,19 @@
         </div>
     </section>
 
+    <section id="extras" class="extras">
+        <div class="container">
+            <h2>Learn How to Build a PC</h2>
+            <div class="youtube-video">
+                <iframe src="https://www.youtube.com/embed/RuNDkcbq8PY" 
+                        title="Linus Tech Tips: How to Build a PC" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Us</h2>
@@ -71,6 +123,14 @@
                 <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
+
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://youtube.com" target="_blank">YouTube</a>
+            </div>
         </div>
     </section>
 
