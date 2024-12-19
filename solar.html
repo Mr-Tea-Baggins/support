@@ -2,12 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bright Solar Solutions - Solar Installation Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Energy France Ltd</title>
+    <link rel="stylesheet" href="css/solar.css">
 </head>
 <body>
-    <h1>Bright Solar Solutions</h1>
-    <img src="solar.jpg" alt="Bright Solar Solutions">
-    <p>Providing residential and commercial solar panel installations for over 15 years. We help you save on energy costs and reduce your environmental footprint.</p>
-    <p>Contact: contact@brightsolar.com | (123) 456-7890</p>
+    <header>
+        <div class="logo">
+            <h1>Solar Energy France Ltd</h1>
+            <p>Harnessing the Power of the Sun for a Sustainable Future</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="images/solar_house.webp" alt="Solar Panel Installation">
+        <div class="hero-text">
+            <h2>Power Your Home with Solar Energy</h2>
+            <p>Join the green revolution with Solar Energy France Ltd. Our solar solutions help you save on energy costs while reducing your carbon footprint.</p>
+            <a href="#contact" class="cta-button">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Solar Panel Installation</h3>
+            <p>We offer top-tier solar panel installation for residential and commercial properties. Our team handles everything from assessment to setup, ensuring high-quality results every time.</p>
+        </div>
+        <div class="service">
+            <h3>Solar Maintenance & Repairs</h3>
+            <p>Keep your solar panels in peak condition with our comprehensive maintenance and repair services. Our experts will ensure your system runs efficiently year-round.</p>
+        </div>
+        <div class="service">
+            <h3>Energy Storage Solutions</h3>
+            <p>Maximize your energy savings with our advanced battery storage solutions. Store excess energy for use when the sun isn't shining.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Solar Energy France Ltd is dedicated to providing sustainable and affordable solar solutions to homeowners and businesses across France. Our mission is to reduce energy bills while making a positive impact on the environment.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="access_key" value="d964a707-92df-4518-bae0-059c563d47e2">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Solar Energy France Ltd | Powered by Clean Energy</p>
+    </footer>
 </body>
 </html>
