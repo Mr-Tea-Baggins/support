@@ -185,11 +185,21 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
 .social-media {
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 20px 0;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #0073e6; /* Change this to a color of your choice */
 }
 
 .social-media a {
@@ -207,10 +217,10 @@ footer {
 
 .youtube-video iframe {
     width: 100%;
-    max-width: 560px;
-    height: 315px;
+    max-width: 448px;
+    height: 252px;
     border: none;
-    margin: 20px auto;
+    margin: 10px auto;
     display: block;
 }
 
